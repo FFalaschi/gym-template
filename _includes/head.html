@@ -1,0 +1,72 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="IronCloud">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <title>{{ site.name }} | {{site.description}}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma.css">
+    <link rel="stylesheet" type="text/css" href="css/hero.css">
+    
+    <!-- Full Calendar Implementation-->
+    <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+    <script src='fullcalendar/lib/jquery.min.js'></script>
+    <script src='fullcalendar/lib/moment.min.js'></script>
+    <script src='fullcalendar/fullcalendar.js'></script>
+    <script src='fullcalendar/locale/es.js'></script>
+    <script type="text/javascript"></script>
+    <script>
+        $(document).ready(function() {
+
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+        // put your options and callbacks here
+        header: {
+            left: 'prev,next',
+            center: 'title',
+            right: 'agendaWeek,agendaDay',
+        },
+
+        height: 400,
+        locale: 'es',
+        titleFormat: 'MMM D',
+        firstDay: '1',  //First Day Monday      
+        hiddenDays: [0], //Hides Sundays
+        timeFormat: 'H(:mm)',
+        defaultView: 'agendaWeek',
+        
+        navLinks: true, // can click day/week names to navigate views
+        editable: false,
+        eventLimit: true, // allow "more" link when too many events
+        events: [
+        {
+            title  : 'event1',
+            start  : '2017-10-23'
+        },
+        {
+            title  : 'event2',
+            start  : '2010-01-05',
+            end    : '2010-01-07'
+        },
+        {
+            title  : 'event3',
+            start  : '2010-01-09T12:30:00',
+            allDay : false // will make the time show
+        }
+        ],
+
+        timeFormat: 'H(:mm)',
+        businessHours: {
+            dow: [ 1, 2, 3, 4, 5, 6], // Monday - Saturdays
+
+            start: '10:00',
+            end: '22:00',
+        }  
+    })
+
+    });
+    </script>
+</head>

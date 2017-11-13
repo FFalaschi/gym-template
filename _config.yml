@@ -1,0 +1,19 @@
+markdown: redcarpet
+baseurl:
+
+name: Dragon Box
+description: El Mejor Gym
+ingreso-socios: app.ironcloud.com.ar/dragonbox 
+
+social:
+    email: franco@falaschi.com
+    facebook: 
+    instagram:
+    youtube:
+    twitter:
+
+gym-info:
+    logo: "../img/logo.png"
+    direccion: Avenida de las frutas 3043
+    telefono: (011) 4444-4444
+    horario:  Lunes a Viernes de 08:00hs a 21:00hs, Sabados de 10:00hs a 18:00hs, Domingos y feriados cerrado.

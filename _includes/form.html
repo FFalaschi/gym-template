@@ -1,0 +1,33 @@
+<form id="contact-form" action="//formspree.io/{{ site.social.email }}" method="POST">
+    
+    <div class="field">
+        <label class="label">Nombre Completo</label>
+        <div class="control">
+            <input class="input form-control" id="name" name="name" placeholder="Nombre Completo" type="text" required>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Correo Electrónico</label>
+        <div class="control">
+            <input class="input form-control" id='email' name="_replyto" type="email" placeholder="Correo Electrónico" required>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Mensaje</label>
+        <div class="form-control control">
+            <textarea class="textarea" id="comments" name="message" placeholder="Escribe aqúi tu mensaje..."></textarea>
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="control">
+            <button class="button is-primary" type="submit">Enviar</button>
+        </div>
+    </div>
+
+    <input type="hidden" name="_next" value=" " />
+    <input type="text" name="_gotcha" style="display:none" />
+
+</form>
